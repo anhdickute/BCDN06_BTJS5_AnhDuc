@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+  <div class="container py-5 ">
+
+    <div class="w-50 mx-auto">
+
+      <div class="container py-5">
+        <form>
+          <h2>Quản lý tuyển sinh</h2>
+          <div class="row">
+            <div class="col-4 form-group">
+              <input type="number1" class="form-control" id="diemChuan" placeholder="Điểm chuẩn">
+            </div>
+
+            <div class="col-4 form-group">
+              <!-- dropdow, combobox  -->
+              <select class="form-control" id="selectkhuvuc">
+                <option value="">Chọn Khu Vực</option>
+                <option value="khuvucA">A</option>
+                <option value="khuvucB">B</option>
+                <option value="khuvucC">C</option>
+                
+               
+              </select>
+            </div>
+
+              <div class="col-4 form-group">
+                <!-- dropdow, combobox  -->
+                <select class="form-control" id="selectdoituong">
+                  <option value="">Chọn Đối Tượng</option>
+                  <option value="doituong1">1</option>
+                  <option value="doituong2">2</option>
+                  <option value="doituong3">3</option>
+                  
+                 
+                </select>
+              </div>
+          
+          <div class="col-4 form-group">
+            <input type="number1" class="form-control" id="diemMon1" placeholder="Điểm môn thứ 1">
+          </div>
+          <div class="col-4 form-group">
+
+            <input type="number2" class="form-control" id="diemMon2" placeholder="Điểm môn thứ 2">
+          </div>
+
+          <div class="col-4 form-group">
+
+            <input type="number3" class="form-control" id="diemMon3" placeholder="Điểm môn thứ 3">
+          </div>
+        </div>
+          <button type="button" id="btnKetQua" class="btn btn-primary">Kết Quả</button><br>
+          <br>
+          <p class="alert alert-success">👉
+            <span id="txtresult"></span>
+          </p>
+
+        </form>
+      </div>
+
+
+      <div class="container py-5">
+        <form>
+          <h2>Tính tiền điện</h2>
+          <div class="row justify-content-start">
+            <div class="col-4 form-group">
+              <input type="string" class="form-control" id="hoten" placeholder="Nhập họ tên">
+            </div>
+            <div class="col-4 form-group">
+              <input type="number1" class="form-control" id="sokw" placeholder="Nhập số kw">
+            </div>
+  
+          </div>
+          
+
+          <button type="button" id="btnTinhTienDien" class="btn btn-primary">Tính tiền điện</button><br>
+          <br>
+          <p class="alert alert-success">👉
+            <span id="kqua"></span>
+          </p>
+
+        </form>
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+  <script src="./js/main.js"></script>
+
+</html>
